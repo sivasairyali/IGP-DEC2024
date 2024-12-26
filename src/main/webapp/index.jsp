@@ -1,6 +1,5 @@
 <html>
 <body>
-<h1 style="background-color:Orange;">Orange</h1>
 <h2>Welcome to ABC technologies</h2>
 <h3>This is retail portal</h3>
 <button name="Add Product" value="Add Product" type="button" onclick="addProduct()">Add Product</button>  

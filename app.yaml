@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: abccon
-    image: sivasairyali/abc_tech:$BUILD_NUMBER
+    image: sivasairyali/abc_tech
     imagePullPolicy: Always
     ports:
       - containerPort: 8080

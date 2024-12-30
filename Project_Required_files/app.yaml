@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: abcapp
+  namespace: default
+  labels:
+     app: ABCtechnologies
+spec:
+  containers:
+  - name: abccon
+    image: sivasairyali/abc_tech:latest
+    ports:
+      - 8080
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: abcsvc
+spec:
+  type: NodePort
+  selector:
+    app: ABCtechnologies
+  ports:
+    protocol: TCP
+    port: 9090
+    targetport: 8080

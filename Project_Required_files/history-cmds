@@ -1,0 +1,1002 @@
+root@k8smaster:~#
+root@k8smaster:~# history
+  414  ls -rlth
+  415  rm -rf IGP-DEC2024/
+  416  ls -rlth
+  417  git add .
+  418  git commit -m "git-src-code"
+  419  cd ..
+  420  git clone https://github.com/sivasairyali/IGP-DEC2024.git
+  421  ls -rlth
+  422  mv IGP-DEC2024 IGP-DEC2024-code1
+  423  git clone https://github.com/sivasairyali/IGP-DEC2024.git
+  424  mv IGP-DEC2024-code1 IGP-DEC2024
+  425  cd IGP-DEC2024
+  426  ls -rlth
+  427  cd IGP-DEC2024-code1/
+  428  cd ..
+  429  ls -rlth
+  430  mv IGP-DEC2024-code1/* ../
+  431  ls -rlth
+  432  mv IGP-DEC2024-code1/* .
+  433  ls -rlth
+  434  cd IGP-DEC2024-code1/
+  435  ls r-lth
+  436  ls -rlth
+  437  cd ..
+  438  rm -rf IGP-DEC2024-code1
+  439  ls -rlth
+  440  cd ..
+  441  cd IGP-DEC2024
+  442  ls  -lrth
+  443  cd ..
+  444  ls -rlth
+  445  cd IGP-DEC2024-code/
+  446  ls r-lth
+  447  ls -rlth
+  448  ls -la
+  449  cp -rfvp * ../IGP-DEC2024/
+  450  cd ../IGP-DEC2024
+  451  ls -rlth
+  452  ls -la
+  453  cd ../IGP-DEC2024
+  454  cd ../IGP-DEC2024-code/
+  455  ls -la
+  456  cp -pvrf .* ../IGP-DEC2024/
+  457  cd ../IGP-DEC2024
+  458  ls -rlth
+  459  ls -la
+  460  cd ..
+  461  rm -rf IGP-DEC2024
+  462  ls -lrth
+  463  rm pom.xml*
+  464  rm -rf src
+  465  rm -rf Project_Required_files
+  466  ls -rlth
+  467  rm -rf target
+  468  ls -rlth
+  469  rm -rf IGP-DEC2024-code
+  470  ls -rlth
+  471  rm README.md
+  472  ls -rlth
+  473  ls -la
+  474  git clone https://github.com/sivasairyali/IGP-DEC2024.git
+  475  ls -rlth
+  476  cd IGP-DEC2024/
+  477  ls
+  478  ls -lrth
+  479  cd ..
+  480  git
+  481  git add .
+  482  git rm --cached IGP-DEC2024
+  483  git rm -f --cached IGP-DEC2024
+  484  ls -rlth
+  485  git add .
+  486  cd IGP-DEC2024/
+  487  ls -rlth
+  488  git clean all
+  489  git
+  490  git fetch
+  491  ls -rlth
+  492  git pull .
+  493  ls -rlth
+  494  git reset
+  495  git log
+  496  git reset 4a8134935f2c35c0710009dacf55ebeede08aa98
+  497  ls -rlth
+  498  git pull .
+  499  ls -rlth
+  500  cd ..
+  501  rm -rf IGP-DEC2024/
+  502  ls -la
+  503  cat .git/
+  504  cd .git/
+  505  ls r-lth
+  506  ls
+  507  cd ..
+  508  rm -rf .git
+  509  git clean all
+  510  git clone https://github.com/sivasairyali/IGP-DEC2024.git
+  511  ls -la
+  512  cd IGP-DEC2024/
+  513  ls -lrth
+  514  cd ..
+  515  git branch
+  516  cd IGP-DEC2024/
+  517  ls r-lth
+  518  ls
+  519  git branch
+  520  git branch master
+  521  git checkout master
+  522  git ls
+  523  ls
+  524  ls -rlth
+  525  git pull
+  526  git branch --set-upstream-to=origin/IGP-DEC2024 master
+  527  git fetch
+  528  ls
+  529  git pull .
+  530  ls -rlth
+  531  git branch
+  532  git commit .
+  533  git fetch
+  534  git pull
+  535  git pull -u origin master
+  536  git pull  origin master
+  537  ls -lrth
+  538  ls -la
+  539  mvn clean install
+  540  ls -lrth
+  541  ls -la
+  542  git push
+  543  git push --set-upstream origin master
+  544  git branch --set-upstream-to=origin/IGP-DEC2024 master
+  545  git pudh -u origin master
+  546  git push -u origin master
+  547  ls -lrth
+  548  git status
+  549  git add .
+  550  git status
+  551  git commit -m "IGP code"
+  552  git push -u origin master
+  553  git status
+  554  systemctl status jenkins.service
+  555  systemctl status ufw.service
+  556  systemctl disable ufw.service
+  557  systemctl stop  ufw.service
+  558  netstat
+  559  netstat -anltup
+  560  cat /etc/netplan/50-cloud-init.yaml
+  561  hostname -I
+  562  telnet localhost 8080
+  563  cat /var/lib/jenkins/secrets/initialAdminPassword
+  564  cd
+  565  apt update
+  566  apt-get dist-upgrade
+  567  cd /var/lib/jenkins/workspace/finalproject-pipeline/target/
+  568  ls -lrth
+  569  date
+  570  cd
+  571  apt install docker
+  572  # Add Docker's official GPG key:
+  573  sudo apt-get update
+  574  sudo apt-get install ca-certificates curl
+  575  sudo install -m 0755 -d /etc/apt/keyrings
+  576  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+  577  sudo chmod a+r /etc/apt/keyrings/docker.asc
+  578  # Add the repository to Apt sources:
+  579  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  580    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  581  sudo apt-get update
+  582  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  583  sudo docker run hello-world
+  584  ps -a
+  585  docker ps
+  586  docker ps -a
+  587  docker --version
+  588  date
+  589  cd
+  590  cd /var/lib/jenkins/plugins/
+  591  cd ../workspace/
+  592  ls -rlth
+  593  cd finalproject-pipeline
+  594  ls -lrth
+  595  cd ..
+  596  ls -lrth
+  597  cd ..
+  598  ls -lrth
+  599  cd
+  600  vi dockerfile
+  601  cat dockerfile
+  602  docker build -t dockerfile
+  603  docker
+  604  docker build
+  605  docker buildx build -t dockerfile
+  606  ls -lrth
+  607  docker ps
+  608  docker ps -a
+  609  docker ps
+  610  docker build
+  611  docker build --help
+  612  docker build -t .
+  613  docker buildx build -t
+  614  ls -lrth
+  615  cat dockerfile
+  616  apt install tomcat
+  617  sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
+  618  cd /tmp/
+  619  wget https://downloads.apache.org/tomcat/tomcat-10/v10.1.19/bin/apache-tomcat-10.1.19.tar.gz
+  620  wget http://downloads.apache.org/tomcat/tomcat-10/v10.1.19/bin/apache-tomcat-10.1.19.tar.gz
+  621  wget https://downloads.apache.org/tomcat/tomcat-10/v10.1.34/bin/apache-tomcat-10.1.34.tar.gz
+  622  ls -rlth
+  623  tar -xvzf apache-tomcat-10.1.34.tar.gz -C /opt/tomcat/
+  624  cd /opt/tomcat/
+  625  ls -lrth
+  626  cd apache-tomcat-10.1.34/
+  627  ls -rlth
+  628  cd ..
+  629  rm -rf apache-tomcat-10.1.34
+  630  cd
+  631  systemctl status jenkins.service
+  632  ls
+  633  telnet localhost 8080
+  634  docker ps -a
+  635  systemctl status ufw.service
+  636  docker images
+  637  docker ps -a
+  638  docker run -it --name abcapp -p 8181:8080 abcapp:v1
+  639  docker run -it --name abcapp3 -p 8181:8080 abcapp:v1
+  640  docker image ps
+  641  docker rm
+  642  docker rm $(docker ps -a)
+  643  ls -rlth
+  644  docker ps -a
+  645  docker images
+  646  docker run -it --name abcapp -p 8181:8080 abcapp:v1
+  647  docker run -it --name abcapp1 -p 8181:8080 abcapp:v1 /bin/bash
+  648  exit
+  649  ls -lrth
+  650  systemctl status jenkins.service
+  651  docker build -t abcapp:v1 -f dockerfile
+  652  docker buildx build  -t abcapp:v1 -f dockerfile
+  653  docker buildx build  -t abcapp:v1 -f dockerfile
+  654  docker build -t abcapp:v1 -f dockerfile
+  655  docker buildx build -f dockerfile
+  656  docker buildx build dockerfile
+  657  ld -lrth
+  658  ls -rlth
+  659  docker buildx build ./dockerfile
+  660  ls -rlt
+  661  docker buildx build
+  662  docker buildx build --help
+  663  docker image build dockerfiles
+  664  docker image build dockerfile
+  665  ls -rlth
+  666  chown ubuntu:ubuntu dockerfile
+  667  docker image build dockerfile
+  668  docker image build .
+  669  ls -lrth
+  670  cd IGP-DEC2024/
+  671  ls -rlth
+  672  cd target/
+  673  ls -rlth
+  674  docker image build /root/
+  675  ls -l ABCtechnologies-1.0.war
+  676  vi /root/dockerfile
+  677  docker image build /root/
+  678  ls -l /root/IGP-DEC2024/target/ABCtechnologies-1.0.war
+  679  cd ..
+  680  ls -lrth
+  681  cd ..
+  682  ls -rlth
+  683  vi dockerfile
+  684  docker image build .
+  685  cat dockerfile
+  686  docker ps -a
+  687  docker image ls
+  688  vi dockerfile
+  689  docker run -it a3050896ea41
+  690  docker ps -a
+  691  docker image ps
+  692  docker image ls
+  693  docker image build -f ABCapp:v1 .
+  694  docker image build -t ABCapp:v1 .
+  695  docker image build -t abcapp:v1 .
+  696  docker image ls
+  697  date
+  698  cat dockerfile
+  699  docker ps -a
+  700  docker run -it --name abcapp
+  701  docker run -it --name abcapp abcapp:v1
+  702  docker images
+  703  docker ls
+  704  docker ps -a
+  705  systemctl stop jenkins
+  706  docker run -it --name abcapp abcapp:v1
+  707  docker ps -a
+  708  docker run --name abcapp abcapp:v1
+  709  docker run -it --name abcapp1 abcapp:v1
+  710  docker run -it --name abcapp1 abcapp:v1 -p 8181:8080
+  711  docker run -it --name abcapp2 abcapp:v1 -p 8181:8080
+  712  docker ps -a
+  713  docker logs 059f8cd8446b
+  714  docker start 059f8cd8446b
+  715  docker ps -a
+  716  systemctl status ufw.service
+  717  netstat -antlp | grep -i 8181
+  718  telnet localhost 8181
+  719  docker container attach abcapp1
+  720  netstat -antlp | grep -i 8181
+  721  docker ps -a
+  722  docker start 059f8cd8446b
+  723  docker ps -a
+  724  docker logs 059f8cd8446b
+  725  curl  http://localhost:8181
+  726  curl  http://localhost:22
+  727  curl  http://localhost:8080
+  728  curl -vk  http://localhost:8181
+  729  docker ps -a
+  730  docker container attach abcapp1
+  731  ls -rlth
+  732  cat dockerfile
+  733  /usr/local/tomcat/bin/catalina.sh
+  734  docker container attach abcapp1
+  735  docker start 059f8cd8446b
+  736  docker container attach abcapp1
+  737  vi dockerfile
+  738  cp dockerfile IGP-DEC2024/
+  739  cd IGP-DEC2024/
+  740  ls -rlth
+  741  git add .
+  742  git commit -m "dockerfile"
+  743  git push origin main
+  744  git status
+  745  git branch
+  746  git add .
+  747  git committ -m "dockerfile"
+  748  git commit -m "dockerfile"
+  749  git push
+  750  history | grep -i git
+  751  git push -u origin master
+  752  history | grep -i git
+  753  git status
+  754  git push
+  755  git branch --set-upstream-to=origin/IGP-DEC2024 master
+  756  git push -u
+  757  git status
+  758  git add .
+  759  git commit -m "dockerfile"
+  760  cd ..
+  761  ls -rlth
+  762  docker ps -a
+  763  docker rm $(docker ps -a)
+  764  docker images
+  765  history
+  766  history | grep -i docker
+  767  docker build -t abcapp:v1 .
+  768  docker images
+  769  docker
+  770  docker images
+  771  docker rmi a3050896ea41
+  772  docker images
+  773  history | grep -i run
+  774  docker ps
+  775  docker ps  -a
+  776  docker start abcapp1
+  777  docker ps  -a
+  778  cat dockerfile
+  779  docker ps  -a
+  780  docker attach abcapp1
+  781  exit
+  782  docker ps -a
+  783  docker rm $(dcoker ps -a)
+  784  docker rm $(docker ps -a)
+  785  docker ps -a
+  786  docker images
+  787  docker rmi abcapp
+  788  docker rmi 1ab43376007a
+  789  vi dockerfile
+  790  docker build -t abcapp:v1 .
+  791  docker images
+  792  history | grep -i 8181
+  793  docker run -it --name abcapp1 abcapp:v1 -p 8181:8080
+  794  docker run -it --name abcapp1  -p 8181:8080 abcapp:v1
+  795  docker ps -a
+  796  docker start 29ce3c24df58
+  797  docker rm 29ce3c24df58
+  798  docker ps -a
+  799  docker run -it --name abcapp  -p 8181:8080
+  800  docker run -it --name abcapp  -p 8181:8080 abcapp1
+  801  docker run -it --name abcapp  -p 8181:8080 abcapp1:v1
+  802  docker run -it --name abcapp  -p 8181:8080 abcapp:v1
+  803  cat dockerfile
+  804  docker images
+  805  docker start abcapp
+  806  docker ps -a
+  807  docker attach cfac28dab700
+  808  docker start cfac28dab700
+  809  vi dockerfile
+  810  docker rm $(docker ps -a)
+  811  docker ps -a
+  812  docker images
+  813  ls -rlth
+  814  docker images
+  815  docker rmi b1a60954c1c5
+  816  docker images
+  817  docker ps -a
+  818  cat dockerfile
+  819  docker build -t abcapp:v1 .
+  820  docker run -it --name abcapp1 abcapp:v1 -p 8181:8080
+  821  docker ps -a
+  822  docker rm $(docker ps -a)
+  823  docker images
+  824  history | grep -i run
+  825  docker run -it --name abcapp1 -p 8181:8080 abcapp:v1 /bin/bash
+  826  docker images
+  827  docker ps -a
+  828  docker rm $(docker ps -a)
+  829  docker ps -a
+  830  docker images
+  831  docker rmi 1ab43376007a
+  832  docker images
+  833  docker build -t abcapp:v1 .
+  834  docker images
+  835  docker run -it --name abcapp1 -p 8181:8080 abcapp:v1
+  836  docker ps -a
+  837  docker start c0a3e7ae4d29
+  838  docker ps -a
+  839  history
+  840  ls -lrth
+  841  cd /var/lib/docker/image/
+  842  ls -rlth
+  843  cd overlay2/
+  844  ls -lrth
+  845  cd imagedb/
+  846  ls -rlth
+  847  cd content/
+  848  ls -rlth
+  849  cd sha256/
+  850  ls -lrht
+  851  cd ..
+  852  cd
+  853  docker image
+  854  docker images
+  855  docker ps -a
+  856  docker push abcapp:v1
+  857  docker ps -a
+  858  docker images
+  859  docker tag abcapp:v1 sivasairyali/abcapp:v1
+  860  docker images
+  861  dcoker login
+  862  docker login
+  863  docker push sivasairyali/abcapp:v1
+  864  cd /var/lib/jenkins/workspace/finalproject-pipeline/target/
+  865  ls -rlth
+  866  cd ..
+  867  ls -rlth
+  868  id jenkins
+  869  ls -l /var/run/docker.sock
+  870  cd
+  871  usermod -a -G docker jenkins
+  872  id jenkins
+  873  js -dh
+  874  js-dh
+  875  id jenkins
+  876  ls -l /var/run/docker.sock
+  877  chown root:jenkins /var/run/docker.sock
+  878  ls -l /var/run/docker.sock
+  879  ls -rlth
+  880  ls -lrth
+  881  cat dockerfile
+  882  vi dockerfile
+  883  cat dockerfile
+  884  ls -lrth
+  885  cd /var/lib/jenkins/
+  886  ls -rlth
+  887  cd workspace/
+  888  ls -lrth
+  889  cd finalproject-pipeline
+  890  ls -rlth
+  891  cat dockerfile
+  892  ls -lrth
+  893  cd target/
+  894  ls -rlt
+  895  cd ABCtechnologies-1.0/
+  896  ls -lrth
+  897  cd ..
+  898  ls -lrth
+  899  cd
+  900  cd -
+  901  cd ..
+  902  ls -rlth
+  903  cd finalproject-pipeline
+  904  ls -rlth
+  905  docker images
+  906  docker ps -a
+  907  cd
+  908  cd -
+  909  ls -l
+  910  cd ..
+  911  ls -rlth
+  912  cd ..
+  913  ls -lrth
+  914  cd
+  915  ls -rlth
+  916  docker images
+  917  docker ps -a
+  918  sudo swapoff -a
+  919  sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+  920  sudo tee /etc/modules-load.d/containerd.conf <<EOF
+  921  overlay
+  922  br_netfilter
+  923  cat /etc/modules-load.d/containerd.conf
+  924  sudo tee /etc/modules-load.d/containerd.conf <<EOF
+  925  EOF
+  926  sudo modprobe overlay
+  927  sudo modprobe br_netfilter
+  928  sudo tee /etc/sysctl.d/kubernetes.conf <<EOT
+  929  net.bridge.bridge-nf-call-ip6tables = 1
+  930  net.bridge.bridge-nf-call-iptables = 1
+  931  net.ipv4.ip_forward = 1
+  932  EOT
+  933  systemctl --system
+  934  systemctl reload
+  935  sudo apt install -y curl gnupg2 software-properties-common apt-transport-https ca-certificates
+  936  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/docker.gpg
+  937  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  938  apt update
+  939  cat /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-jammy.list
+  940  vi /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-jammy.list
+  941  apt update
+  942  apt list --upgradable
+  943  sudo apt install -y containerd.io
+  944  containerd config default | sudo tee /etc/containerd/config.toml >/dev/null 2>&1
+  945  sudo sed -i 's/SystemdCgroup \= false/SystemdCgroup \= true/g' /etc/containerd/config.toml
+  946  systemctl restart containerd
+  947  systemctl enable containerd
+  948  systemctl status containerd.service
+  949  curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+  950  echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+  951  sudo apt update
+  952  $ sudo apt install -y kubelet kubeadm kubectl
+  953  $ sudo apt-mark hold kubelet kubeadm kubectl
+  954  hostnamectl set-hostname "k8smaster.example.net"
+  955  exec bash
+  956  echo "172.31.80.229 k8smaster.example.net k8smaster" >> /etc/hosts
+  957  cat /etc/hosts
+  958  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net
+  959  apt install -y kubelet kubeadm kubectl
+  960  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net
+  961  df -hT
+  962  lsblk
+  963  history
+  964  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net
+  965  df -hT
+  966  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net
+  967  cat /etc/sysctl.conf
+  968  modprobe br_netfilter
+  969  vi /etc/sysctl.conf
+  970  sysctl -p
+  971  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net
+  972  kubectl get nodes
+  973  cat /etc/hosts
+  974  hostnamectl set-hostname k8smaster.example.net
+  975  exec bash
+  976  export KUBECONFIG=/etc/kubernetes/admin.conf
+  977  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net
+  978  kubectl get nodes
+  979  history
+  980  systemctl status containerd.service
+  981  history
+  982  cat /etc/hosts
+  983  hostname -I
+  984   /etc/hosts
+  985  kubectl get nodes
+  986  cat /etc/kubernetes/admin.conf
+  987  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net
+  988  netstat -antlp
+  989  kubectl get nodes
+  990  hostname -I
+  991  cat /var/log/syslog
+  992  kubeadm token generate
+  993  hostname -I
+  994  kubeadm join --token=j4xby6.j5yu6o2w13e1gucd
+  995  kubeadm join --token=j4xby6.j5yu6o2w13e1gucd 172.31.21.173
+  996  kubeadm join --token=j4xby6.j5yu6o2w13e1gucd 172.31.21.173:6443
+  997  cat /etc/kubernetes/admin.conf
+  998  sysctl -p
+  999  kubectl get nodes
+ 1000  telnet k8smaster.example.net 6443
+ 1001  systemctl status containerd
+ 1002  systemctl status kubelet
+ 1003  netstat -antlp
+ 1004  ping 172.31.80.229
+ 1005  hostname -I
+ 1006  kubectl cluster info
+ 1007  kubectl cluster-info
+ 1008  export KUBECONFIG=/etc/kubernetes/admin.conf
+ 1009  kubectl cluster-info
+ 1010  hostname -I
+ 1011  netstat -antlp
+ 1012  nslookup k8smaster.example.net
+ 1013  vi /etc/netplan/50-cloud-init.yaml
+ 1014  kubeadm init
+ 1015  kubeadm init phase certs
+ 1016  kubeadm init phase certs all
+ 1017  cat /etc/kubernetes/manifests/kube-apiserver.yaml
+ 1018  grep -i 172 /etc/kubernetes/manifests/kube-apiserver.yaml
+ 1019  hostname -I
+ 1020  sed -i 's/80.229/21.173/g' /etc/kubernetes/manifests/kube-apiserver.yaml
+ 1021  hostname -I
+ 1022  grep -i 172 /etc/kubernetes/manifests/kube-apiserver.yaml
+ 1023  cat /etc/kubernetes/admin.conf
+ 1024  grep -i 172 /etc/kubernetes/admin.conf
+ 1025  systemctl restart kube-apiserver
+ 1026  systemctl restart kube-controller-manager
+ 1027  systemctl restart kube-scheduler
+ 1028  df -hT
+ 1029  kubectl cluster-info
+ 1030  export KUBECONFIG=/etc/kubernetes/admin.conf
+ 1031  kubectl cluster-info
+ 1032  cat /etc/hosts
+ 1033  kubectl cluster-info dump
+ 1034  netstat -antlp
+ 1035  grep -i "172.31.80.229" -r *
+ 1036  netstat -antlp
+ 1037  grep -i "172.31.80.229" -r *
+ 1038  cat /etc/kubernetes/admin.conf
+ 1039  kubeadm token create --print-join-command
+ 1040  kubectl get nodes
+ 1041  history | grep -i jenkins
+ 1042  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net
+ 1043  systemctl status containerd.service
+ 1044  kubectl
+ 1045  kubectl logs
+ 1046  kubectl api-versions
+ 1047  netstat -antlp
+ 1048  systemctl status kube-apiserver
+ 1049  netstat -anltp
+ 1050  kubeadm init --control-plane-endpoint=k8smaster.example.net
+ 1051  cat /etc/modules-load.d/containerd.conf
+ 1052  sudo tee /etc/modules-load.d/containerd.conf <<EOF
+ 1053  overlay
+ 1054  br_netfilter
+ 1055  EOF
+ 1056  sudo modprobe overlay
+ 1057  sudo modprobe br_netfilter
+ 1058  sudo tee /etc/sysctl.d/kubernetes.conf <<EOT
+ 1059  net.bridge.bridge-nf-call-ip6tables = 1
+ 1060  net.bridge.bridge-nf-call-iptables = 1
+ 1061  net.ipv4.ip_forward = 1
+ 1062  EOT
+ 1063  systemctl --system
+ 1064  systemctl --system LOAD
+ 1065  containerd config default | sudo tee /etc/containerd/config.toml >/dev/null 2>&1
+ 1066  sudo sed -i 's/SystemdCgroup \= false/SystemdCgroup \= true/g' /etc/containerd/config.toml
+ 1067  systemctl restart containerd
+ 1068  systemctl enable containerd
+ 1069  curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+ 1070  cd /etc/
+ 1071  ls -rlth
+ 1072  mv kubernetes kubernetes-old
+ 1073  mv /var/lib/kubelet /var/lib/kubelet-backup
+ 1074  mkdir -p kubernetes
+ 1075  cp -r kubernetes-backup/pki kubernetes
+ 1076  cp -r kubernetes-old/pki kubernetes/
+ 1077  rm kubernetes/pki/{apiserver.*,etcd/peer.*}
+ 1078  systemctl start docker
+ 1079  systemctl start kubelet docker
+ 1080  systemctl  status kubelet.service docker.service
+ 1081  systemctl  restart kubelet.service docker.service
+ 1082  systemctl  status kubelet.service docker.service
+ 1083  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net --ignore-preflight-errors=DirAvailable--var-lib-etcd
+ 1084  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net --ignore-preflight-errors=DirAvailable--var-lib-etcd `--ignore-preflight-errors=...`
+ 1085  netstat -antlp
+ 1086  systemctl stop containerd.service
+ 1087  systemctl stop docker.service
+ 1088  netstat -antlp
+ 1089  kubeadm init --ignore-preflight-errors=DirAvailable--var-lib-etcd
+ 1090  kubeadm init --ignore-preflight-errors=DirAvailable--var-lib-etcd --v=5
+ 1091  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net --ignore-preflight-errors=DirAvailable--var-lib-etcd --v=5
+ 1092  systemctl  restart kubelet.service docker.service
+ 1093  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net --ignore-preflight-errors=DirAvailable--var-lib-etcd --v=5
+ 1094  netstat -antlp | grep -i 10259
+ 1095  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net --ignore-preflight-errors=DirAvailable--var-lib-etcd --v=5 `--ignore-preflight-errors=...`
+ 1096  netstat -antlp | grep -i 10259
+ 1097  netstat -antlp
+ 1098  ps -ef | grep -i kube
+ 1099  vi /etc/kubernetes/scheduler.conf
+ 1100  ls -l /etc/kubernetes/scheduler.conf
+ 1101  kill 1150 1158
+ 1102  ps -ef | grep -i kube
+ 1103  netstat -antlp
+ 1104  sudo kubeadm init --control-plane-endpoint=k8smaster.example.net --ignore-preflight-errors=DirAvailable--var-lib-etcd --v=5 `--ignore-preflight-errors=...`
+ 1105  export KUBECONFIG=/etc/kubernetes/admin.conf
+ 1106  kubectl get nodes
+ 1107  kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.0/manifests/calico.yaml
+ 1108  cd
+ 1109  kubectl get pods -n kube-system
+ 1110  kubectl get nodes
+ 1111  kubectl get pods -n kube-system
+ 1112  hostname -I
+ 1113  date
+ 1114  vi app.yaml
+ 1115  kubectl apply -f app.yaml
+ 1116  kubectl get pods
+ 1117  kubectl describe pod abcapp
+ 1118  cat /etc/os-release
+ 1119  cat /home/ubuntu/.ssh/authorized_keys
+ 1120  cat /etc/hosts
+ 1121  echo "172.31.18.249 k8sworker01.example.net k8sworker01" >> /etc/hosts
+ 1122  cat /etc/hosts
+ 1123  kubectl get nodes
+ 1124  date
+ 1125  kubectl get pods
+ 1126  kubectl delete pod abcapp
+ 1127  kubectl create deployment nginx-app --image=nginx --replicas=2
+ 1128  systemctl stop jenkins
+ 1129  kubectl create deployment nginx-app --image=nginx --replicas=2
+ 1130  kubectl get pods
+ 1131  kubectl get pods -o wide
+ 1132  kubectl delete pods nginx-app-5777b5f95-4khx2
+ 1133  kubectl delete pods nginx-app-5777b5f95-lb6sz
+ 1134  kubectl get pods -o wide
+ 1135  kubectl get deployments
+ 1136  kubectl delete deployment nginx-app
+ 1137  kubectl get pods -o wide
+ 1138  cat app.yaml
+ 1139  kubectl apply -f app.yaml
+ 1140  kubectl get pods -o wide
+ 1141  kubectl delete pod abcapp
+ 1142  systemctl start jenkins
+ 1143  systemctl status jenkins
+ 1144  netstat -antlp
+ 1145  kubectl cluster-info
+ 1146  kubectl config view
+ 1147  hostname -I
+ 1148  kubectl get ns
+ 1149  kubectl create token jenkins --duration=8760h
+ 1150  kubectl create sa jenkins
+ 1151  kubectl create token jenkins --duration=8760h
+ 1152  date
+ 1153  kubectl get pos
+ 1154  kubectl get pods
+ 1155  kubectl apply -f app.yaml
+ 1156  kubectl get pods
+ 1157  whoami
+ 1158  su - jenkins
+ 1159  usremod -a -G sudo jenkins
+ 1160  usermod -a -G sudo jenkins
+ 1161  passwd jenkins
+ 1162  mkdir -p $HOME/.kube
+ 1163  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+ 1164  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+ 1165  su - jenkins
+ 1166  cp app.yaml /var/lib/jenkins/workspace/
+ 1167  ls -l /var/lib/jenkins/workspace/
+ 1168  chown jenkins:jenkins /var/lib/jenkins/workspace/app.yaml
+ 1169  su - jenkins
+ 1170  cp app.yaml IGP-DEC2024/
+ 1171  cd IGP-DEC2024/
+ 1172  ls -lrth
+ 1173  git add .
+ 1174  git commit -m "kubectl yaml file"
+ 1175  git push
+ 1176  ls -rlth
+ 1177  history | grep -i git
+ 1178  git branch
+ 1179  git push -u origin master
+ 1180  git branch --set-upstream-to=origin/IGP-DEC2024 master
+ 1181  git fetch
+ 1182  git status
+ 1183  git add .
+ 1184  git commit -m "kubectl yaml file"
+ 1185  git pull
+ 1186  git add .
+ 1187  git commit -m "kubectl yaml file"
+ 1188  ls -rlth
+ 1189  git push
+ 1190  git branch --set-upstream-to=origin/IGP-DEC2024 master
+ 1191  git push -u
+ 1192  git | grep -i set
+ 1193  git remote set-url origin sivasairyali@gmail.com:sivasairyali/IGP-DEC2024.git
+ 1194  git remoterepo -v
+ 1195  git
+ 1196  git reomte -v
+ 1197  git remote -v
+ 1198  git push -u
+ 1199  git bracnh
+ 1200  git branch
+ 1201  git add .
+ 1202  git commit -m "kubectl yaml file"
+ 1203  git push
+ 1204  history | grep -i git
+ 1205  git branch --set-upstream-to=origin/IGP-DEC2024 master
+ 1206  git push -u
+ 1207  git push -u origin master
+ 1208  cat app.yaml
+ 1209  su - jenkins
+ 1210  cd
+ 1211  docker images
+ 1212  kubectl get pods
+ 1213  docker images
+ 1214  docker ps -a
+ 1215  kubectl get pods
+ 1216  kubectl describe pods
+ 1217  kubectl get pods
+ 1218  kubectl describe pods
+ 1219  cat /var/lib/jenkins/workspace/finalproject-pipeline/app.yaml
+ 1220  kubectl get pods
+ 1221  cat /var/log/syslog
+ 1222  cat /var/lib/jenkins/jobs/finalproject-pipeline/builds/41/log
+ 1223  cat app.yaml
+ 1224  kubectl get pods
+ 1225  cat /var/lib/jenkins/workspace/finalproject-pipeline/app.yaml
+ 1226  kubectl apply -f app.yaml
+ 1227  kubectl get pods
+ 1228  vi app.yaml
+ 1229  kubectl apply -f app.yaml
+ 1230  kubectl get pods
+ 1231  kubectl apply -f app.yaml
+ 1232  vi app.yaml
+ 1233  kubectl apply -f app.yaml
+ 1234  kubectl get pods
+ 1235  kubectl delete pods
+ 1236  kubectl delete pods abcapp
+ 1237  kubectl get pods
+ 1238  kubectl describe pods
+ 1239  kubectl delete pods abcapp
+ 1240  kubectl get pods
+ 1241  kubectl describe pods
+ 1242  kubectl delete pods abcapp
+ 1243  kubectl get pods
+ 1244  docker images
+ 1245  docker rmi $(dcoker images)
+ 1246  docker images | awk -F: `print $1`
+ 1247  docker images | awk  '{ print $1 }'
+ 1248  docker rmi $(docker images | awk  '{ print $1 }')
+ 1249  docker images | awk  '{ print $1 }'
+ 1250  docker images
+ 1251  docker ps -a
+ 1252  docker
+ 1253  docker kill all
+ 1254  docker rm $(docker ps -a)
+ 1255  docker ps -a
+ 1256  docker rm c9571ab50627
+ 1257  docker stop  $(docker ps -a)
+ 1258  docker rm $(docker ps -a)
+ 1259  docker ps -a
+ 1260  docker images
+ 1261  docker rmi $(docker images | awk  '{ print $1 }')
+ 1262  docker images
+ 1263  docker rmi abc_tech
+ 1264  docker images
+ 1265  docker rmi 0773d6c7b1fc
+ 1266  docker rmi sivasairyali/abc_tech
+ 1267  docker images
+ 1268  systemctl stop docker
+ 1269  systemctl stop docker.socket
+ 1270  docker images
+ 1271  kubectl get pods
+ 1272  kubectl get pods -o wide
+ 1273  kubectl describe pods
+ 1274  kubectl get pods
+ 1275  kubectl delete pods
+ 1276  kubectl delete pods abcapp
+ 1277  cd /var/lib/jenkins/workspace/finalproject-pipeline/
+ 1278  ls -rlth
+ 1279  cat app.yaml
+ 1280  netstat -antlp
+ 1281  netstat -antlp | grep -i 9090
+ 1282  cd
+ 1283  kubectl get pdos
+ 1284  kubectl get pods
+ 1285  cd -
+ 1286  ls -lrht
+ 1287  kubectl apply app.yaml
+ 1288  kubectl apply -f app.yaml
+ 1289  kubectl get pods
+ 1290  kubectl get pods -o wide
+ 1291  kubectl get nodes
+ 1292  kubectl get nodes -o wide
+ 1293  kubectl get pods
+ 1294  kubectl get pods -o wide
+ 1295  kubectl get pods -o wide -o wide
+ 1296  kubectl get cluster-info
+ 1297  kubectl cluster-info
+ 1298  kubectl get svc
+ 1299  kubectl describe svc
+ 1300  cat app.yaml
+ 1301  kubectl get svc
+ 1302  cat app.yaml
+ 1303  kubectl delete pods
+ 1304  kubectl delete pods abcapp
+ 1305  kubectl delete svc abcsvc
+ 1306  kubectl apply -f app.yaml
+ 1307  kubectl get svc
+ 1308  kubectl get pods
+ 1309  kubectl get pods -o wide
+ 1310  kubectl -it abcapp -bash
+ 1311  kubectl exec -it mypod -- /bin/bash
+ 1312  kubectl exec -it abcapp -- /bin/bash
+ 1313  ls -rlth
+ 1314  kubectl get pods
+ 1315  kubectl get pods -o wide
+ 1316  curl -v http://192.168.127.205:9090
+ 1317  kubectl get pods
+ 1318  kubectl get svc
+ 1319  curl -v http://192.168.127.205:9090:30910
+ 1320  hostname -I
+ 1321  curl -v http://10.111.230.192:9090
+ 1322  cat app.yaml
+ 1323  kubectl get sbc
+ 1324  kubectl get svc
+ 1325  kubectl get svc -o wide
+ 1326  kubectl describe svc abcsvc
+ 1327  curl -v http://192.168.127.205:8080
+ 1328  hostname -I
+ 1329  ls -rlth
+ 1330  cd target/
+ 1331  ls -rlth
+ 1332  cd
+ 1333  systemctl start docker.s
+ 1334  systemctl start docker.socket
+ 1335  systemctl start docker
+ 1336  kubectl get svc
+ 1337  kubectl cluster-info
+ 1338  kuebectl get nodes
+ 1339  kubectl cluster-info
+ 1340  kubectl get nodes
+ 1341  kubectl get pods -o wide
+ 1342  date
+ 1343  kubectl get pods
+ 1344  hostname -I
+ 1345  netstat -antlp
+ 1346  netstat -antlp | grep -i 9090
+ 1347  wget https://github.com/prometheus/prometheus/releases/download/v2.37.5/prometheus-2.37.5.linux-amd64.tar.gz
+ 1348  tar -xvzf prometheus-2.37.5.linux-amd64.tar.gz
+ 1349  cd prometheus-2.37.5.linux-amd64/
+ 1350  ls -rlth
+ 1351  mkdir /etc/prometheus
+ 1352  mkdir /var/lib/prometheus
+ 1353  mv consoles console_libraries /etc/prometheus/
+ 1354  mv prometheus promtool /usr/local/bin/
+ 1355  mv prometheus.yml /etc/prometheus/prometheus.yaml
+ 1356  prometheus --version
+ 1357  groupadd --system prometheus
+ 1358  useradd -s /sbin/nologin --system -g prometheus prometheus
+ 1359  chown -R prometheus:promethes /etc/prometheus/ /var/lib/prometheus/
+ 1360  chown -R prometheus:prometheus /etc/prometheus/ /var/lib/prometheus/
+ 1361  chmod -R 775 /etc/prometheus/ /var/lib/prometheus/
+ 1362  vi /etc/systemd/system/prometheus.service
+ 1363  ls -rlth
+ 1364  systemctl start prometheus.service
+ 1365  systemctl  status prometheus.service
+ 1366  cd ..
+ 1367  rm  -rf prometheus-2.37.5.linux-amd64
+ 1368  rm prometheus-2.37.5.linux-amd64.tar.gz
+ 1369  vi /etc/prometheus/prometheus.yaml
+ 1370  kubectl get svc
+ 1371  vi node-exporter.sh
+ 1372  chmod +x node-exporter.sh
+ 1373  vi /etc/prometheus/prometheus.yaml
+ 1374  cat /etc/prometheus/prometheus.yaml
+ 1375  systemctl restart prometheus.service
+ 1376  systemctl status prometheus.service
+ 1377  cat /etc/prometheus/prometheus.yaml
+ 1378  vi /etc/prometheus/prometheus.yaml
+ 1379  systemctl restart prometheus.service
+ 1380  systemctl status prometheus.service
+ 1381  vi /etc/prometheus/prometheus.yaml
+ 1382  systemctl status prometheus.service
+ 1383  systemctl restart prometheus.service
+ 1384  systemctl status prometheus.service
+ 1385  vi /etc/prometheus/prometheus.yaml
+ 1386  systemctl restart prometheus.service
+ 1387  systemctl status prometheus.service
+ 1388  curl http://localhost:9100/metrics
+ 1389  cat node-exporter.sh
+ 1390  systemctl status prometheus-node-exporter
+ 1391  apt-get install prometheus-node-exporter -y
+ 1392  systemctl status prometheus-node-exporter
+ 1393  curl http://localhost:9100/metrics
+ 1394  curl http://localhost:9100/metrics | head -20
+ 1395  curl http://localhost:9100/metrics
+ 1396  curl http://localhost:9100/metrics | head
+ 1397  curl http://localhost:9100/metrics | less
+ 1398  curl http://localhost:9100/metrics | tail -20
+ 1399  date
+ 1400  systemctl restart prometheus
+ 1401  systemctl status prometheus
+ 1402  systemctl enable prometheus.service
+ 1403  cat /etc/apt/sources.list.d/jenkins.list
+ 1404  ssh 172.31.18.249
+ 1405  exit
+ 1406  su - jenkins
+ 1407  cat .ssh/authorized_keys
+ 1408  cat .ssh/id_rsa.pub
+ 1409  ssh 172.31.18.249
+ 1410  cat dockerfile
+ 1411  cat /etc/prometheus/prometheus.yaml
+ 1412  cat /etc/systemd/system/prometheus.service
+ 1413  history

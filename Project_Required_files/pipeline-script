@@ -1,0 +1,75 @@
+pipeline
+{
+      agent any
+      stages
+      {
+             stage('code checkout')
+             {
+                   steps
+                      { 
+                            git 'https://github.com/sivasairyali/IGP-DEC2024.git'
+                       }
+              }
+              stage('code compile')
+              {
+                   steps
+                      { 
+                            sh 'mvn package'
+                       }
+              }
+     	      stage('Test')
+              {
+                   steps
+                      { 
+                            sh 'mvn package'
+                       }
+              }
+              stage('Package')
+              {
+                   steps
+                      { 
+                           sh 'mvn package'
+                       }
+              }
+
+              stage('Build Docker Image')
+              {
+                   steps
+                      { 
+                           sh 'cp /var/lib/jenkins/workspace/$JOB_NAME/target/ABCtechnologies-1.0.war /var/lib/jenkins/workspace/abc_tech.war'
+                           sh 'docker build -t abc_tech:$BUILD_NUMBER .'
+                           sh 'docker tag abc_tech:$BUILD_NUMBER sivasairyali/abc_tech:$BUILD_NUMBER'
+                       }
+              }
+              
+              stage('Push Docker Image')
+              {
+                    steps
+                       {
+                          withDockerRegistry([ credentialsId: "js-dh", url: "" ])
+                          {
+                             sh 'docker push sivasairyali/abc_tech:$BUILD_NUMBER'
+                           }
+                        }
+               }
+               
+               stage('Deploy as container')
+               { 
+                      steps 
+                       { 
+                            
+                            sh 'docker run -itd -P sivasairyali/abc_tech:$BUILD_NUMBER'
+                       } 
+               }
+
+
+               stage('Deploy to kubernetes')
+               { 
+                      steps 
+                       { 
+                            
+                            sh 'kubectl apply -f app.yaml'
+                       } 
+               }
+       }
+}

@@ -14,14 +14,14 @@ pipeline
               {
                    steps
                       { 
-                            sh 'mvn package'
+                            sh 'mvn compile'
                        }
               }
      	      stage('Test')
               {
                    steps
                       { 
-                            sh 'mvn package'
+                            sh 'mvn test'
                        }
               }
               stage('Package')
@@ -37,8 +37,8 @@ pipeline
                    steps
                       { 
                            sh 'cp /var/lib/jenkins/workspace/$JOB_NAME/target/ABCtechnologies-1.0.war /var/lib/jenkins/workspace/abc_tech.war'
-                           sh 'docker build -t abc_tech:$BUILD_NUMBER .'
-                           sh 'docker tag abc_tech:$BUILD_NUMBER sivasairyali/abc_tech:$BUILD_NUMBER'
+                           sh 'docker build -t abc_tech:latest .'
+                           sh 'docker tag abc_tech:latest sivasairyali/abc_tech:latest'
                        }
               }
               
@@ -46,9 +46,9 @@ pipeline
               {
                     steps
                        {
-                          withDockerRegistry([ credentialsId: "js-dh", url: "" ])
+                          withDockerRegistry([ credentialsId: "90fe7a84-4f32-449c-9034-429c1d5fef14", url: "" ])
                           {
-                             sh 'docker push sivasairyali/abc_tech:$BUILD_NUMBER'
+                             sh 'docker push sivasairyali/abc_tech:latest'
                            }
                         }
                }
@@ -58,16 +58,16 @@ pipeline
                       steps 
                        { 
                             
-                            sh 'docker run -itd -P sivasairyali/abc_tech:$BUILD_NUMBER'
+                            sh 'docker run -itd -P sivasairyali/abc_tech'
                        } 
                }
-
-
-               stage('Deploy to kubernetes')
+               
+                stage('Deploy to kubernetes')
                { 
                       steps 
                        { 
-                            
+                            sh 'whoami'
+                            sh 'pwd'
                             sh 'kubectl apply -f app.yaml'
                        } 
                }

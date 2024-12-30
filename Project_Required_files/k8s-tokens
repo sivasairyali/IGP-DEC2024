@@ -1,0 +1,46 @@
+Your Kubernetes control-plane has initialized successfully!
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+You can now join any number of control-plane nodes by copying certificate authorities
+and service account keys on each node and then running the following as root:
+
+  kubeadm join k8smaster.example.net:6443 --token byyr3i.ojmkza5lv1j6p8hn \
+        --discovery-token-ca-cert-hash sha256:40d303c941a3d2d0fd7679fd4f53a0e73d24e76b6a06cddab201e541e421cc0d \
+        --control-plane
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join k8smaster.example.net:6443 --token byyr3i.ojmkza5lv1j6p8hn \
+        --discovery-token-ca-cert-hash sha256:40d303c941a3d2d0fd7679fd4f53a0e73d24e76b6a06cddab201e541e421cc0d
+
+
+
+==================================
+
+
+kubeadm join k8smaster.example.net:6443 --token rxve6r.36e0uk07pc7cltq8 \
+        --discovery-token-ca-cert-hash sha256:40d303c941a3d2d0fd7679fd4f53a0e73d24e76b6a06cddab201e541e421cc0d \
+        --control-plane
+
+==========================================
+
+service account : Jenkins
+namespace : default
+token: 
+
+eyJhbGciOiJSUzI1NiIsImtpZCI6ImJJZkRodHZ3aXNpR1hWbkx0a2pyQ3RRa3o4cmtrT1RHMkNBT3d5N1lXWjgifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNzY2OTc2MDEyLCJpYXQiOjE3MzU0NDAwMTIsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJkZWZhdWx0Iiwic2VydmljZWFjY291bnQiOnsibmFtZSI6ImplbmtpbnMiLCJ1aWQiOiJjZTMyYjJhOS0zYzEwLTRjZTUtOTI5Ny0xMjkwYTIyMDIwODQifX0sIm5iZiI6MTczNTQ0MDAxMiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OmRlZmF1bHQ6amVua2lucyJ9.TmS_eLQRMM0o-fyLo0PTqeRJZ-kiR-JDN4KsgzErzEsuWGKJvCKPuuNgv16W4PqRdhMR8qsqifplSlJemobu0cy_LuwtacqEBoLqW-lTTOXXjPGdNNWIefi_T41IBRBv_oqR3RSusJU4qn4AGhBdUAvlVtENsw_tC8JqjKDsrUQxqqz01RUZc8DbHHOezP8zTk_psUz0KvldgEuu9EouNAIftA9wr3Y76bE72Fumk_cGCvpw8TWxs2oAa__S0rxqgQeVvr82_ti4Nqr_uITail4xzx-Rr-OSzjqP_mQvauPQdcu20WZziIufQR-ltLEZ-QUDK5jhdd015CiDJuXJwg
+
+==========================================
